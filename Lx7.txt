@@ -1,0 +1,103 @@
+﻿C#企业级开发技术练习7答题卡
+
+班级：计算机信息管理1班
+姓名：谢沛良    
+学号：  29   
+
+注：请将答案放置在序号下方。*/
+
+（一）
+using System:
+using Sytem.Collections.Generic;
+namespace ConsoleApppl
+{
+class Program
+{
+static K CalcAcvg<K>(List<K> a) where K : struct
+{
+double s = 0;
+foreach (K i in a)
+{
+K=k/a.Count;
+}
+S=s / a.Count;
+return (K)(object)s;
+}
+static void Main(string[] args)
+{
+List<float> x = new List<float>();
+x.Add(23f);
+x.AddRange(new[] { 12f, 15f, 20f});
+Console.WriteLine(CalcAvg(x));
+List<decimal> y = new List<decimal>();
+y.AddRange(new[] {2.3M,4.5M,6.3M});
+Console.WriteLine(CalcAvg(y));
+}
+}
+}
+（二）
+using System;
+using System. Collections. Generic;
+namespace ConsoleAppl
+{
+ class Program
+{
+ static K CalcAvg<K>(List<K> a) where K : struct
+{
+ double s = 0;
+ foreach (K i in a）
+{
+}
+s=s/ a.Count;
+return (K) (object)s;
+}
+ static void Main(string[] args)
+{
+List<float> x = new List<float>() ;
+x. Add (23f) ;
+x. AddRange (new[] { 12f， 15f, 20f });
+Console. WriteLine (CalcAvg(x)) ;
+List<decimal> y = new List<decimal>() ;
+y. AddRange (new[] {2. 3M, 4.5M,6. 3M });
+Console. WriteLine (CalcAvg(y));
+}
+}
+}
+
+
+（三）
+using System;
+lnamespace ConsoleApp1
+{
+class Program 
+{
+delegate R SortArr<in T, in s,out R>(T z,S y);
+delegate vo1d OutResult<in K>(K x);
+static void Main(string[] args)
+{
+SortArr<int[], string, int[]> result = (m,s) =>
+{
+if (s = "desc")
+{
+}
+1f (s == "asc")
+{
+return m;
+};
+OutResult<int[]> outR = p =>
+{
+string s = string. Join(',', p);
+Console. WriteLine(s);
+};
+int[]arr={27，46,36，12};
+Console. WriteLine("不排序“);
+int[] r3 = result(arr，" nosort") ;
+outR (r3);
+Console. WriteLine("升序”);
+int[] rl = result(arr,' asc' );
+outR(r1);
+Console. WriteLine("降序");
+int[] r2 = result(arr，"desc");
+outR (r2) ;
+}
+
